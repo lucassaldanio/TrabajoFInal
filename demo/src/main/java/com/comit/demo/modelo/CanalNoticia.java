@@ -14,8 +14,14 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class CanalNoticia implements Serializable {	@Id
+public class CanalNoticia implements Serializable {	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Short id;
+	private String nombreCanal;
+	
 
 }

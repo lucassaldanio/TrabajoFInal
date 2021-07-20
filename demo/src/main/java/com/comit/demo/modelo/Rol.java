@@ -15,7 +15,11 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 
-public abstract class Rol implements Serializable {	@Id
+public abstract class Rol implements Serializable {	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Short id;
 

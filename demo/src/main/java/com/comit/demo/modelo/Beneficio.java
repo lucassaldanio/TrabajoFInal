@@ -15,8 +15,17 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 
-public class Beneficio implements Serializable {	@Id
+public class Beneficio implements Serializable {	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Short id;
+    private String nombre;
+    private String requisitos;
+    private String Monto;
+    
+
 
 }

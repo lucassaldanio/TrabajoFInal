@@ -18,5 +18,7 @@ import lombok.Setter;
 public class Usuario implements Serializable  {	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Short id;
+    private String nombre;
+    
 
 }

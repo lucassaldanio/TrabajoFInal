@@ -16,6 +16,13 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Noticia implements Serializable  {	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	private Short id;
+	private String fecha;
+	private String titulo;
+	private String contenido;
+	
+	
+	
 
 }
