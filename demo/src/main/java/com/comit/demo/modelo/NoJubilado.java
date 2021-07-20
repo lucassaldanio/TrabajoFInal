@@ -1,15 +1,22 @@
 package com.comit.demo.modelo;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 
 @Entity 
 @DiscriminatorValue ("NO_JUBILADO")
-public class NoJubilado extends Beneficiario {
+public class NoJubilado extends Beneficiario implements Serializable {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Short id;
 	
 	private Integer edad;
 	private String genero;
