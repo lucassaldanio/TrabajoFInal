@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 
 @Entity 
@@ -24,7 +25,7 @@ public class NoJubilado extends Beneficiario implements Serializable {
 	private BigDecimal ingresos;
 	private String ocupacion;
 	private String movilidad;
-	
+	@OneToMany
 	private List<Contacto> contactos;
 	public NoJubilado() {}
 
