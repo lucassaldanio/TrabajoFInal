@@ -18,5 +18,18 @@ import lombok.Setter;
 public class Jubilado extends Beneficiario implements Serializable  {	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Short id;
+	private Integer documento;
+	private Integer celular;
+	private String  email;
+	
+	
+	public Jubilado(Integer documento, Integer celular, String email) {
+		super();
+		this.documento = documento;
+		this.celular = celular;
+		this.email = email;
+	}
+	
+
 
 }
