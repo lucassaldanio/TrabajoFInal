@@ -1,0 +1,420 @@
+* {margin: 0;
+   padding: 0; 
+box-sizing: border-box;}
+
+
+
+/*BODY*/
+body {background-color: #8ABD57;
+height: 100vh;
+}
+
+
+
+/*ETIQUETAS H*/
+h1  {text-align: center;
+    color: darkolivegreen;
+    font-family: 'Anton', sans-serif;
+padding: 20px;}
+
+h2 {text-align: center;
+    color: #644835;
+    font-family: 'Josefin Sans', sans-serif;
+padding: 20px;
+margin-top: 80px;
+margin-bottom: 100px;}
+
+
+
+
+
+/*HEATHER*/
+#cabecera {
+    background-color: #4F7352;}
+  
+.contenedor1 {display: flex;
+justify-content: space-between;}
+
+
+
+/*INDEX*/
+
+
+
+/*FOTOS INDEX*/
+.inicio {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+min-height: 100vh;
+align-items: center;}
+
+.containerindex {
+    width: 500px;
+    height: 300px;
+    background-image: url("../imagenes/jubilado.jpg");
+    background-size: cover;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 0 0 11px #ccc,
+                0 20px 20px -12px #000;   
+}
+
+
+.texto {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(62, 105, 52, 0.452);
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    position: relative;
+    transition: all .3s;
+    top: 100%;
+    text-decoration: none;
+}
+
+.containerindex:hover .texto {top: 0;}
+
+/*VIDEOS INDEX*/
+
+.containervideos {
+    width: 500px;
+    height: 300px;
+    background-image: url("../imagenes/Desocupados.jpg");
+    background-size: cover;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 0 0 11px #ccc,
+                0 20px 20px -12px #000;   
+}
+
+.containervideos:hover .texto {top: 0;}
+
+/*NOTICIAS INDEX*/
+
+.containernoticias {
+    width: 500px;
+    height: 300px;
+    background-image: url("../imagenes/Desocupados.jpg");
+    background-size: cover;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 0 0 11px #ccc,
+                0 20px 20px -12px #000;   
+}
+
+.containernoticias:hover .texto {top: 0;}
+
+/*COLABORA INDEX*/
+
+.containercolabora {
+    width: 500px;
+    height: 300px;
+    background-image: url("../imagenes/Desocupados.jpg");
+    background-size: cover;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 0 0 11px #ccc,
+                0 20px 20px -12px #000;   
+}
+
+.containercolabora:hover .texto {top: 0;}
+
+
+/*MODIFICACIONES QUE HICE PORQUE BOOSTRAP LE SEGUIA DANDO SU ESTILO*/
+a {text-decoration: none;}
+a:hover {text-decoration: none;
+color: rgb(106, 192, 72);}
+.containerindex:hover .texto {top: 0;
+color: white;
+font-weight: bold;}
+
+.containervideos:hover .texto {top: 0;
+    color: white;
+    font-weight: bold;}
+
+.containercolabora:hover .texto {top: 0;
+        color: white;
+        font-weight: bold;}
+
+.containernoticias:hover .texto {top: 0;
+            color: white;
+            font-weight: bold;}
+
+
+
+/*TODO LO QUE ESTA EN EL NAV*/
+
+
+
+nav {padding: 20px;
+    margin: 15px;
+    text-align: right;
+font-size: 20px;}
+
+nav ul li:hover {background-color: rgb(247, 247, 21);
+font-size: 25px;}
+
+ul li {
+    
+    text-decoration: none;
+    font-size: 28px;
+    color: darkgreen;
+    border: solid darkolivegreen 2px;
+    background-color: #8ABD57;
+    display: inline-block;
+    text-transform: uppercase;   
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+   
+.menu {color: #4F7352;
+text-decoration: none;}
+
+
+
+/*BOTON QUE ESTA EN EL INDEX Y EN FOTOS*/
+#menu2 {
+    float: right;
+    padding: 10px;
+    border: solid  darkgreen 5px;  
+    background-color: #877E50;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: darkgreen;
+    font-family: 'Anton', sans-serif;
+font-weight: 400;
+    } 
+
+#menu2:hover {font-size: 220%;
+cursor: pointer;}
+
+/*FOOTER*/
+.pie {font-size: 30px;
+    text-transform: uppercase;
+    padding: 20px;}
+    
+footer {margin-top: 200px;
+        text-align: center;
+        font-size: 2em;
+        background-color: #644835;
+        color: white;
+    }
+
+    
+
+
+
+/*FORMULARIO*/
+#formulario {
+    padding: 20px;
+text-align: center;
+margin: 10%;
+border: solid #7A3737 2px;
+}
+
+
+
+/*FOTOS.HTML*/
+.contenedor {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;}
+
+.contenedor img {width: 100%;}
+
+
+.contenedor2 {display: flex;
+justify-content: center;}
+
+.fotorecuadro {display: flex;
+justify-content: center;
+align-items: flex-start;}
+
+
+/*VIDEOS.HTML*/
+
+.videos {background-color: whitesmoke;
+width: 700px;
+height: 500px;
+border-radius: 10px;
+border: solid black;
+margin: 20px;
+}
+
+.videos h2 {text-align: center;
+padding: 20px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.videos p {text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+font-size: 22px;
+margin: 3px;
+}
+.videos iframe {margin-left: 70px;}
+
+.videos:hover {background-color: yellow;}
+
+.videosflex {display: flex;}
+
+
+/*FOTOS.HTML*/
+.fotosok {background-color: whitesmoke;
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    border: solid black;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;}
+
+.fotosok p {text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    margin: 3px;
+    }
+
+    .fotosok h2 {text-align: center;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        }
+
+.fotosok img {
+border: solid black 2px;
+box-sizing: content-box;
+max-height: 50%;
+
+
+
+}
+
+.fotosok:hover {background-color: yellow;}
+.fotosok:hover  h2 {font-size: 30px;}
+
+.fotosconflex {display: flex;
+align-items: center;
+justify-content: center;}
+
+
+
+
+
+
+/*NOTICIAS.HTML*/
+.noticias {background-color: whitesmoke;
+    background-color: whitesmoke;
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
+    border: solid black;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;}
+
+.noticias p {text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+font-size: 22px;
+margin: 3px;
+}
+
+.noticias h2 {text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+
+    .noticias:hover {background-color: yellow;}
+    .noticias:hover  h2 {font-size: 30px;}
+    
+.padrenoticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;}
+
+.padrenoticia h2 {text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+.padrenoticia:hover {background-color: rgba(6, 90, 17, 0.315);}
+
+
+/*GALERIA CON GRID*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 20% 20%;
+    gap: 10px 10px;
+    grid-template-areas:
+      "img2 img2 img1 img1"
+      "img3 img3 img1 img1"
+      "img4 img4 img5 img6";
+  }
+  .img1 { grid-area: img1; }
+  .img2 { grid-area: img2; }
+  .img3 { grid-area: img3; }
+  .img4 { grid-area: img4; }
+  .img5 { grid-area: img5; }
+  .img6 { grid-area: img6; }
+
+.grid-container img {width: 100%;
+    height: 100%;
+    object-fit: cover;}
+
+.galerias { float: center;
+    padding: 10px;
+    border: solid  darkgreen 5px;  
+    background-color: #877E50;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: darkgreen;
+    font-family: 'Anton', sans-serif;
+font-weight: 400;
+margin-left: 45%;
+margin-bottom: 10%;
+margin-top: 10%;}
+
+
+
+/*FORMULARIO CON BOOSTRAP*/
+
+.container {
+    background-color: rgba(172, 138, 44, 0.151);
+    border-radius: 10px;
+    border: solid yellow;
+    padding: 15px;
+}
