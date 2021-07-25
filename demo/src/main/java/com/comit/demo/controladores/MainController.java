@@ -24,4 +24,23 @@ public class MainController {
 		return "noticiaspf";
 	}
 	
+	@GetMapping("/contacto")
+	public String contacto() {
+		return "contactoTF";
+	}
+	
+	@GetMapping("/jubilados")
+	public String jubilado() {
+		return "jubilados";
+	}
+
+	@GetMapping("/noJubiladoForm")
+	public String noJubilado() {
+		return "noJubiladoForm";
+	}
+	
+
+
+	
+	
 }
