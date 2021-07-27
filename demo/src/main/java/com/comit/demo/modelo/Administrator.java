@@ -16,7 +16,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 
-public class Administrator implements Serializable {
+public class Administrator extends Rol implements Serializable  {
 	/**
 	 * 
 	 */
@@ -24,5 +24,10 @@ public class Administrator implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Short id;
+	@Override
+	public String getTipo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

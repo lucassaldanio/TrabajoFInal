@@ -22,4 +22,5 @@ public class Beca implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Short id;
+	private String institucion;
 }

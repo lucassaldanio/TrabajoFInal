@@ -22,5 +22,5 @@ public abstract class Rol implements Serializable {	/**
 @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Short id;
-
+    public abstract String getTipo();
 }

@@ -15,8 +15,18 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 
-public class Editor implements Serializable {
+public class Editor extends Rol implements Serializable  {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Short id;
+	@Override
+	public String getTipo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
