@@ -15,19 +15,13 @@ import lombok.Setter;
 @Getter
 @Setter
 @DiscriminatorValue ("JUBILADO")
-public class Jubilado extends Beneficiario implements Serializable  {	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Short id;
+public class Jubilado extends Beneficiario  {
+	private static final long serialVersionUID = 1L;
 	private Integer documento;
-	private Integer celular;
-	private String  email;
-	
-	
-	public Jubilado(Integer documento, Integer celular, String email) {
-		super();
+
+	public Jubilado(Integer documento, Long celular, String email) {
+		super(celular, email);
 		this.documento = documento;
-		this.celular = celular;
-		this.email = email;
 	}
 	
 

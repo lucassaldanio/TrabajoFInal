@@ -4,7 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.comit.demo.modelo.NoJubilado;
 import com.comit.demo.servicios.NoJubiladoService;
@@ -26,11 +28,15 @@ public class NoJubiladoController {
 	}
 	
 	
-	@GetMapping("/crearnoJubilado")
-	public String crear (@ModelAttribute(name = "nojubilado")NoJubilado nojubilado) {
-		NoJubiladoService.guardar(nojubilado);
+	@PostMapping("/crear")
+	public String crear (@ModelAttribute(name = "nojubilado")NoJubilado nojubilado, @RequestParam(name = "acepto") Boolean acepto ) {
+		if (acepto)
+			nojubilado = nojubiladoService.guardar(nojubilado);
+		
+		System.out.println(nojubiladoService.findOneByEmailAndNroSeguridad(nojubilado.getEmail(), nojubilado.getNroSeguridad()));
+		
 		return "redirect:/";
 	}
 
-}
+
 }

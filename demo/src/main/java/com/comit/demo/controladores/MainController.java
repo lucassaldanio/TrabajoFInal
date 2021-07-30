@@ -1,9 +1,12 @@
 package com.comit.demo.controladores;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.comit.demo.modelo.NoJubilado;
 
 @Controller
 @RequestMapping
@@ -35,12 +38,18 @@ public class MainController {
 	}
 
 	@GetMapping("/noJubiladoForm")
-	public String noJubilado() {
-		return "noJubiladoForm";
+	public String noJubilado(Model model) {
+		model.addAttribute("noJubilado", new NoJubilado());
+		return "noJubiladoForm";}
+		
+	@GetMapping("/jubiladoFormulario")
+	public String jubiladoFormulario() {
+		return "jubiladoFormulario";	
+	
+	
 	}
 	
-
-
+	
 	
 	
 }
